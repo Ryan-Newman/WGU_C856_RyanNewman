@@ -1,0 +1,357 @@
+﻿@page
+@model WGU_C856_RyanNewman.Pages.EntertainmentModel
+@{
+    ViewData["Title"] = "Entertainment";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    body {
+      z-index: 100;
+        background-color: white;
+        /* background-image: url('https://ryde.azurewebsites.net/images/Paradigm_Logo.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+        background-position: 45%;
+        background-size: 500px;
+        background-blend-mode: overlay;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button {
+        background-color: white;
+        color:black;
+        margin: 0.5% 0% 0.5% 0.25%;
+        padding: 0.25% 0.5%;
+        border-radius: 10%;
+    }
+    p {
+      text-align: center;
+      word-wrap: break-word;
+      text-shadow: 1px 1px 1px #003B6D;
+    }
+    section {
+      margin: 3% 0% 2% 0%;      
+  display: -webkit-flex;
+  display: flex;
+  text-shadow: 2px 2px 5px #003B6D;
+}
+    article {
+      text-shadow: 2px 2px 5px #003B6D;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  
+  padding: 10px;
+}
+h1, h2, h5 {
+  text-shadow: 2px 2px 5px #003B6D;
+}
+table {
+  margin: 0% 0% 0% 33%;
+  background-color: #003B6D;
+}
+tr, td {
+  background-color: #003B6D;
+  color: #BDBDBD;
+  border-color: #676767;
+  text-align: center;
+}
+a {
+  color:#676767;
+}
+.nav-link {
+    color: black;
+    /* #6699CC */
+  }
+
+  .btn-search {
+    background-color: #003B6D;
+    color:#676767;
+    border: 2px solid #6699CC;
+  }
+  .btn-link {
+    /* background-color: #6699CC; */
+    background-image: linear-gradient(red, yellow);
+    color:#676767;
+    border: 2px solid #6699CC;
+  }
+  .nav-link:hover {
+    color: #676767;
+  }
+  .mb-3 {
+    /* background-image: url('https://pixabay.com/get/gfd2cafce8bdb088020e13dc507782d324d250c5531261da57c84f9aad1ce2e8d45e4b3adc7c6f0ed44b6d14046ff7e40b20764e5c9b613ad62e597bedee3f30e_1280.jpg'); */
+    background-image: linear-gradient(red, yellow);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        
+  }
+
+    </style>
+</head>
+<body>
+ 
+  <nav class="nav nav-pills flex-column flex-sm-row" >
+   <a class="flex-sm-fill text-sm-center nav-link" asp-area="" asp-page="/Index">Home</a>
+    <a class="flex-sm-fill text-sm-center nav-link" asp-area="" asp-page="/Dining">Restaurants and Grocery</a>
+    <a class="flex-sm-fill text-sm-center nav-link" asp-area="" asp-page="/Lodging">Lodging</a>
+    <a class="flex-sm-fill text-sm-center nav-link active" style="background-color:orange; color:black;" aria-current="page" asp-area="" asp-page="/Entertainment">Entertainment and SightSeeing</a>
+     <a class="flex-sm-fill text-sm-center nav-link " asp-area="" asp-page="/Transportation">Transportation</a>
+    <a class="flex-sm-fill text-sm-center nav-link " asp-area="" asp-page="/FAQ">FAQ</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" style="background-color:whitesmoke" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-search" type="submit">Search</button>
+    </form>
+  </nav>
+  <br>
+  <div>
+    <div style="text-align: center; opacity: 50%;font-size: xx-large;">Prototype</div>
+ 
+
+  <p style="font-size: 50px;">Entertainment and Sightseeing</p>
+  <br>
+  <p style="font-size: 20px; margin:1% 8% 1% 8%; text-align: center;">
+    Visit Yellow Leaf Bay, where many of the islands activities can be found, Yellow Leaf Bay is an area that is rapidly developing. We have many entertainment and sightseeing activities to try during your visit to the island from visiting the active volcano, to ziplines, to the museum, and we even have helicopter rides.
+    <br>
+    Soon you won't have to leave all your hobbies at home, we have a nine-hole golf course to take advantage of when it becomes operational in the next year. 
+  </p>
+  
+   <!-- Volcano Start -->
+   <div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="~/images/Volcano.jpg" class="img-fluid rounded-start" style="border-radius: 7px; width: 800px; height: auto;" alt="Taniti Local"></a>
+      Image by <a href="https://pixabay.com/users/julius_silver-4371822/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3018634">Julius Silver</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3018634">Pixabay</a>
+    </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="display-1">Volcano</h5>
+          <br><br><br>
+          <p class="display-5">Visit our active volcano!</p>
+          <br><br><br>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Volcano End -->
+
+
+  <!-- Rainforest Start -->
+  <div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="~/images/Rainforest.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Rainforest"></a>
+      Image by <a href="https://pixabay.com/users/atlantios-4957810/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3119822">Antonios Ntoumas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3119822">Pixabay</a>
+    </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="display-1">Rainforest</h5>
+          <br><br><br>
+          <p class="display-5">Take a walk in our beautiful rainforest!</p>
+          <br><br><br>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Rainforest End -->
+
+  <!-- Museum Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/Museum.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Museum"></a>
+      Image by <a href="https://pixabay.com/users/publicco-5009832/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2203648">Public Co</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2203648">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Museum</h5>
+        <br><br><br>
+        <p class="display-5">Get to know the history of Taniti at the Museum.</p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Museum End -->
+
+ <!-- Chartered Fishing Tours Start -->
+ <div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/CharteredFishingTours.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Chartered Fishing Tours"></a>
+    Image by <a href="https://pixabay.com/users/hannes2301-32740488/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7748770">Hannes Nevermann</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7748770">Pixabay</a>
+    
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Chartered Fishing Tours</h5>
+        <br><br><br>
+        <p class="display-5">Enjoy a day with one of the Islands fishing experts by taking one of the chartered fishing tours.</p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Chartered Fishing Tour End -->
+
+<!-- Snorkeling Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/Snorkeling.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Snorkeling"></a>
+   Image by <a href="https://pixabay.com/users/publicdomainpictures-14/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2333">PublicDomainPictures</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2333">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Snorkeling</h5>
+        <br><br><br>
+        <p class="display-5">Discover the wonders of the ocean with snorkeling around the island.</p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Snorkeling End -->
+
+<!-- Zipline Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/Zipline.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Zipline"></a>
+    Image by <a href="https://pixabay.com/users/800boost-1988988/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1174441">800boost</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1174441">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Zipline</h5>
+        <br><br><br>
+        <p class="display-5">Seeking adventure? Try some of the ziplines around the island or through the rainforest.</p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Zipline End -->
+
+<!-- Microbrewery Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/Microbrewery.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Microbrewery"></a>
+   Image by <a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2209813">David Mark</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2209813">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Microbrewery, Pubs, and Dancing</h5>
+        <br><br><br>
+        <p class="display-5">Wanting to experience the nightlife on the island? Try our microbrewery, one of the pubs, or even one of the dance clubs around Taniti.</p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Microbrewery End -->
+
+<!-- Helicopter Rides Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/HelicopterRides.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Helicopter Rides"></a>
+    Image by <a href="https://pixabay.com/users/frolicsomepl-54573/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=186718">Ewa Urban</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=186718">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Helicopter Rides</h5>
+        <br><br><br>
+        <p class="display-5">A unique experience on the island is one of beauty from the air, try a helicopter ride to experience Taniti from an ariel view. </p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Helicopter Rides End -->
+
+<!-- Beach Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/Beach.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Beach"></a>
+    Image by <a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1993704">David Mark</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1993704">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Beaches</h5>
+        <br><br><br>
+        <p class="display-5">What vacation would be complete without exploring the beaches on the island? Enjoy the many beaches we have around the island. </p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Beach End -->
+
+
+<!-- Other Activities Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/OtherActivities.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Other Activities"></a>
+    Image by <a href="https://pixabay.com/users/tama66-1032521/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3114279">Peter H</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3114279">Pixabay</a>
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Many More Activities</h5>
+        <br><br><br>
+        <p class="display-5">In addition to all the activities listed above, we have many more activities to enjoy such as an art gallery, arcade, and bowling. </p>
+        <br><br><br>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Other Activities End -->
+
+
+<!-- Golf Course Start -->
+<div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/images/GolfCourse.jpg" class="img-fluid rounded-start" style="border-radius: 7px;  width: 800px; height: auto" alt="Helicopter Rides"></a>
+      Image by <a href="https://pixabay.com/users/woonsa57-10071603/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3736961">Deugchul Shin</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3736961">Pixabay</a>    
+  </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="display-1">Upcoming Golf Course</h5>
+        <br><br><br>
+        <p class="display-5">If you are loving the island enough to plan another trip, in the next year we will have an operational nine-hole golf course! </p>
+        <br><br><br>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Golf Course End -->
+
+
+</body>
+
+<footer class="footer mt-auto py-3" style="background-image: linear-gradient(red, yellow); text-align:center">
+  <a href="Home.html" style="padding: 1%; color:Black">Home</a>
+  <a href="FAQ.html" style="text-align: center; color: black;">FAQ</a>
+  
+</footer>
+</html>
+

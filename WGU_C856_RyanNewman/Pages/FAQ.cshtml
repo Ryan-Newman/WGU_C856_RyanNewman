@@ -1,0 +1,165 @@
+﻿@page
+@model WGU_C856_RyanNewman.Pages.FAQModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    body {
+      z-index: 100;
+      background-color: linear-gradient(red, yellow);
+        /* background-image: url('https://ryde.azurewebsites.net/images/Paradigm_Logo.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+        background-position: 45%;
+        background-size: 500px;
+        background-blend-mode: overlay;
+        color: black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button {
+        /* background-color: white; */
+        color:black;
+        margin: 0.5% 0% 0.5% 0.25%;
+        padding: 0.25% 0.5%;
+        border-radius: 10%;
+    }
+    p {
+      text-align: center;
+      word-wrap: break-word;
+      text-shadow: 1px 1px 1px #003B6D;
+    }
+    section {
+      margin: 3% 0% 2% 0%;      
+  display: -webkit-flex;
+  display: flex;
+  text-shadow: 2px 2px 5px #003B6D;
+}
+    article {
+      text-shadow: 2px 2px 5px #003B6D;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  
+  padding: 10px;
+}
+h1, h2, h5 {
+  text-shadow: 2px 2px 5px #003B6D;
+}
+table {
+  margin: 0% 0% 0% 33%;
+  background-color: #003B6D;
+}
+tr, td {
+  background-color: #003B6D;
+  color: #BDBDBD;
+  border-color: #676767;
+  text-align: center;
+}
+a {
+  color:#676767;
+}
+.nav-link {
+    color: black;
+    /* #6699CC */
+  }
+
+  .btn-search {
+    background-color: #003B6D;
+    color:#676767;
+    border: 2px solid #6699CC;
+  }
+  .btn-link {
+    /* background-color: #6699CC; */
+    background-image: linear-gradient(red, yellow);
+    color:#676767;
+    border: 2px solid #6699CC;
+  }
+  .nav-link:hover {
+    color: #676767;
+  }
+  .mb-3 {
+    /* background-image: url('https://pixabay.com/get/gfd2cafce8bdb088020e13dc507782d324d250c5531261da57c84f9aad1ce2e8d45e4b3adc7c6f0ed44b6d14046ff7e40b20764e5c9b613ad62e597bedee3f30e_1280.jpg'); */
+    background-image: linear-gradient(red, yellow);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        padding-right: 15%;
+        padding-left: 15%;
+        margin-left: 10%;
+        margin-right: 10%;        
+  }
+
+    </style>
+</head>
+<body>
+ 
+  <nav class="nav nav-pills flex-column flex-sm-row" >
+    <a class="flex-sm-fill text-sm-center nav-link" asp-area="" asp-page="/Index">Home</a>
+    <a class="flex-sm-fill text-sm-center nav-link" asp-area="" asp-page="/Dining">Restaurants and Grocery</a>
+    <a class="flex-sm-fill text-sm-center nav-link" asp-area="" asp-page="/Lodging">Lodging</a>
+    <a class="flex-sm-fill text-sm-center nav-link " asp-area="" asp-page="/Entertainment">Entertainment and SightSeeing</a>
+    <a class="flex-sm-fill text-sm-center nav-link " asp-area="" asp-page="/Transportation">Transportation</a>
+    <a class="flex-sm-fill text-sm-center nav-link active" style="background-color:orange; color:black;" aria-current="page" asp-area="" asp-page="/FAQ">FAQ</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" style="background-color:whitesmoke" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-search" type="submit">Search</button>
+    </form>
+  </nav>
+  <br>
+  <div>
+    <div style="text-align: center; opacity: 50%;font-size: xx-large;">Prototype</div>
+ 
+
+  <p style="font-size: 50px;">Frequently Asked Questions/Frequently Requested Information</p>
+  <br>
+  <p style="font-size: 20px; margin:1% 8% 1% 8%; text-align: center;">
+    While on the island there are some questions you may have, on this page are answers to frequently requested information.
+  </p>
+  
+  <!-- FAQ -->
+  <div class="card mb-3" style="background-color:#003B6D; border: 2px solid #676767; text-align: center;">
+    <div class="row g-0">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-lg-12">
+        <div class="card-body mx-auto">
+          <h5 class="display-1">Frequently Requested Information</h5>
+          <br><br><br>
+          <p class="display-6">What is the power outlate voltage? 120 volts in the same format as the United States.</p>
+          <br>
+          <p class="display-6">Are there any restrictions on alcohol? 18 years of age or older, but not strictly enforced. Alcohol is not allowed to be served or sold between midnight and 9:00 a.m.</p>
+          <br>
+          <p class="display-6">What language is spoken on Taniti by the locals and indigenous people? English is fluently spoken by younger Tanitians, however, in rural areas very little english is spoken, most notably by the older residents. Hospitals have multilingual employees.</p>
+          <br>
+          <p class="display-6">Are there any hospitals? Yes there is one hospital and several clinics.</p>
+          <br>
+          <p class="display-6">How much crime is reported on the island? It is very rare, however, as tourism increases, there have been more reports of pickpocketing and other crimes.</p>
+          <br>
+          <p class="display-6">Are there any holidays in Taniti? We observe a large number of national holidays that the restaurants and tourist attractions may be closed to observe. It is best to plan for the holidays and closures accordingly</p>
+          <br>
+          <p class="display-6">What is the currency? U.S. dollar is the most accepted currency in Taniti, however, many businesses will accept credit cards, euros, and yen. If you need currency exchange, several banks offer this service.</p>
+          <br>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Airport End -->
+
+</body>
+
+<footer class="footer mt-auto py-3" style="background-image: linear-gradient(red, yellow); text-align:center">
+  <a href="Home.html" style="padding: 1%; color:Black">Home</a>
+  <a href="FAQ.html" style="text-align: center; color: black;">FAQ</a>
+  
+</footer>
+</html>
+
